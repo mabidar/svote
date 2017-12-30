@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.scrum.ma.scrum.NewElementActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="429dp"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text=" Write your series Numbers (Strings) separated by pipe | "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textSize="36sp" />
+
+                <EditText
+                    android:id="@+id/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:inputType="textMultiLine"
+                    android:text="0|0,5|1|2|3|5|8|13|20|40|100|∞|?|☕"
+                    android:textAlignment="viewStart"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+                <Button
+                    android:id="@+id/button_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Validate" />
+
+                <Button
+                    android:id="@+id/button_reset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reset to Fibonacci" />
+
+        </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
